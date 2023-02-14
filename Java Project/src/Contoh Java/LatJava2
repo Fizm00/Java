@@ -1,0 +1,108 @@
+// tugas pertama
+import java.util.Scanner;
+/////////////////////////////////////////////////////////////////
+class metod {
+	private int[] dt; // array
+	private int jml_data;
+	private int i;
+//--------------------------------------------------------------
+	public metod() { // constructor
+		dt = new int[100]; // array sebanyak 100 indek
+		jml_data = 0; // jumlah data mula-mula nol
+	}
+//--------------------------------------------------------------
+// method input untuk memasukkan data ke dalam array
+	public void input(int data) {
+		dt[jml_data] = data;
+		jml_data++;
+	}
+//--------------------------------------------------------------
+// method untuk menampilkan data yang ada dalam array
+// method tidak mengembalikan nilai (menggunakan void) --> PROCEDURE
+	public void lihat () {
+		for(i=0; i<jml_data; i++) // menampilkan data
+			System.out.println(dt[i]);
+		System.out.println("");
+	}
+//--------------------------------------------------------------
+// method untuk mencari data yang ada dalam array
+// method mengembalikan nilai (tidak menggunakan void) --> FUNCTION
+	public boolean cari(int cr) {
+		for(i=0; i<jml_data; i++) // mencari data pada setiap elemen array
+			if(dt[i] == cr) // data pada array sama dengan data yang dicari?
+				break; // jika benar maka pencarian dihentikan
+		if(i == jml_data) // apakah pencarian yang dilakukan sebanyak jumlah elemen array?
+			return false; // data TIDAK ditemukan
+		else
+			return true; // data ditemukan
+	}
+//--------------------------------------------------------------
+// method untuk menghapus data yang ada dalam array
+// method mengembalikan nilai (tidak menggunakan void) --> FUNCTION
+	public boolean hapus(int hps) {
+		boolean cri = cari(hps);
+		if (cri==true) { // bila data ditemukan maka dihapus
+			for(int j=i; j<jml_data-1; j++) // melakukan penimpaan data
+				dt[j] = dt[j+1];
+			jml_data--; // jangan lupa jumlah data dikurangi satu!!!
+			return true;
+		}
+		else // bila data tidak ditemukan
+			return false;
+	}
+} // end class metod
+
+/////////////////////////////////////////////////////////////////////////
+class tgsPertamaOK {
+	public static void main(String[] args) {
+		int i=1, dat, cariData;
+		Scanner sken = new Scanner(System.in);
+		metod md = new metod(); // memanggil class metod dengan variabel md
+		
+//----------------------------------------------------------------------
+
+		int menu;
+		do {
+			System.out.println("Pilih Menu di bawah ini");
+			System.out.println("1. Memasukkan data");
+			System.out.println("2. Pencarian data");
+			System.out.println("3. Penghapusan data");
+			System.out.println("4. Penampilan data");
+			System.out.println("5. Keluar");
+			System.out.print("Anda memilih : ");
+	  		menu = sken.nextInt();
+	  			  		
+	  		if (menu==1){
+		  		System.out.print("Masukkan data ke-" + i + " = ");
+	  			dat = sken.nextInt();
+	  			md.input(dat); // memanggil method input pada class metod
+	  			i++;
+			}
+			
+			if (menu==2) {
+	  			System.out.print("Data yang anda cari = ");
+	 		 	cariData = sken.nextInt();
+	  		 	boolean hasil = md.cari(cariData); // memanggil method cari pada class metod
+	  		 	if (hasil==true)
+	  		 		System.out.println("Data " + cariData + " ditemukan");
+	  		 	else
+	  		 		System.out.println("Data " + cariData + " tidak ditemukan ");
+	  		 	System.out.println("");
+	  		 				
+			} else if (menu==3) {
+				System.out.print("Data yang anda hapus = ");
+	  		 	cariData = sken.nextInt();
+	  		 	boolean sts = md.hapus(cariData); // memanggil method hapus pada class metod
+	  		 	if (sts==true)
+	  		 		System.out.println("Data " + cariData + " berhasil dihapus");
+	  		 	else
+	  		 		System.out.println("Data " + cariData + " TIDAK ditemukan");
+				
+				System.out.println("");
+	
+			} else if (menu==4) {
+				md.lihat();
+			}
+		} while (menu >= 1 && menu < 5);
+	} // end main()
+} // end class tgsPertamaOK
