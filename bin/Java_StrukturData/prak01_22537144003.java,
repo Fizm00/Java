@@ -56,7 +56,7 @@ class metod {
 } // end class metod
 
 /////////////////////////////////////////////////////////////////////////
-class ArrayProgram3 {
+class prak01_22537144003 {
 	public static void main(String[] args) {
 		int i=1, dat, cariData;
 		Scanner sken = new Scanner(System.in);
