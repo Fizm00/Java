@@ -1,0 +1,114 @@
+Selamat Datang di Program Shopping Cart!
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 1
+Berapa item yang ingin ditambahkan? 2
+[+] Masukkan nama item ke-1: mangga
+[+] Masukkan harga item ke-1: 5000
+[+] Masukkan jumlah item ke-1: 2
+[+] Masukkan nama item ke-2: pisang
+[+] Masukkan harga item ke-2: 6000
+[+] Masukkan jumlah item ke-2: 3
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 2
+Daftar item di keranjang
+[ 0 ] Item: mangga, Harga: 5000.0, Jumlah: 2
+[ 1 ] Item: pisang, Harga: 6000.0, Jumlah: 3
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 3
+Masukkan nama item yang ingin dicari
+>> pisang
+[+] Item: pisang, Harga: 6000.0, Jumlah: 3
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 2
+Daftar item di keranjang
+[ 0 ] Item: mangga, Harga: 5000.0, Jumlah: 2
+[ 1 ] Item: pisang, Harga: 6000.0, Jumlah: 3
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 5
+>> Total harga: 25000.0
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 4
+Masukkan nama item yang ingin dihapus
+>> mangga
+Item berhasil dihapus
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 2
+Daftar item di keranjang
+[ 0 ] Item: pisang, Harga: 6000.0, Jumlah: 3
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 5
+>> Total harga: 15000.0
++-----------------------------+
+Silahkan pilih menu dibawah ini
++-----------------------------+
+1. Tambahkan item ke keranjang
+2. Lihat keranjang
+3. Cari item di keranjang
+4. Hapus item dari keranjang
+5. Tampilkan total harga
+6. Keluar
+Choose: 6
